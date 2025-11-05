@@ -4,11 +4,14 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build"
+    "build": "vite build",
+    "preview": "vite preview"
   },
   "dependencies": {
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-plotly.js": "^2.6.0",
+    "plotly.js": "^2.24.1"
   },
   "devDependencies": {
     "vite": "^4.5.0",

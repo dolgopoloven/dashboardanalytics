@@ -7,3 +7,5 @@ node_modules/
 .DS_Store
 dist/
 venv_temp/
+*.env
+venv/

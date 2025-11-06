@@ -10,7 +10,7 @@ class RealRnovatioClient:
     def __init__(self):
         self.base_url = "https://app.rnova.org/api/public"
         self.api_key = os.getenv("RNOVATIO_API_KEY")
-        self.is_configured = bool(self.api_key and self.api_key == "67f...0f4")
+        self.is_configured = bool(self.api_key and self.api_key == "67fbc7f03e18507ed3895f22483d10f4")
         
     def test_connection(self):
         """Проверка подключения к API"""
@@ -100,7 +100,8 @@ class RealRnovatioClient:
         try:
             params = {
                 "api_key": self.api_key,
-                "limit": 50  # Ограничиваем количество для начала
+                "show_all": 1,
+                "limit": 500  # Ограничиваем количество для начала
             }
             
             response = requests.post(
